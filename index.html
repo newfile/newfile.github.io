@@ -9,9 +9,118 @@
     <!--[if lt IE 9]>
     <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js">
     <![endif]-->
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    
-  </body>
+  <style>
+        body{
+            padding: 0;
+            margin: 0;
+            height: 1800px;
+            text-align: center;
+        }
+        #main_bot{
+            margin:0 auto;
+            background-color: #d9d9d9;
+            /*width: 1324px;*/
+            height: 1400px;
+
+        }
+        #head {
+            margin:0 auto;
+            background-image: url("02.jpg");
+            /*margin-left: auto;*/
+            /*margin-right: auto ;*/
+            height: 300px;
+            width: 1150px;
+            overflow: auto;
+            /*background-size:cover;*/
+        }
+        #style1 {
+            margin:0 auto;
+            background-color: #ffb84c;
+            margin-top: 30px;
+            /*margin-left: auto;*/
+            /*margin-right: auto ;*/
+            width: 1150px;
+            height: 400px;
+        }
+        #style2{
+            margin:0 auto;
+            background-color: #ffffff;
+            margin-top: 30px;
+            /*margin-left: auto;*/
+            /*margin-right: auto ;*/
+            width: 1150px;
+            height: 400px;
+        }
+        #bottom{
+            margin:0 auto;
+            background-color: darkgrey;
+            /*margin-left: auto;*/
+            /*margin-right: auto ;*/
+            margin-top: 30px;
+            height: 150px;
+            width: 1150px;
+
+        }
+        #d22{
+            margin-bottom: 50px;
+            background-color: darkgray;
+            width: 1150px;
+
+        }
+        .ss{
+            height: 200px;
+            width: 150px;
+            background-color: darkseagreen;
+            border: 2px #888b17 #882611;
+            box-shadow: 3px 3px 10px #4b81f5;
+            float: left;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-top:20px;
+
+        }
+        .ss:hover{
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+<div id="main_bot">
+
+    <div id = "head">
+        <h1>resume bar</h1>
+    </div>
+
+    <div id = "style1">
+        <div id = "s11" class="ss"></div>
+        <div id = "s12" class="ss"></div>
+        <div id = "s11" class="ss"></div>
+        <div id = "s12" class="ss"></div>
+        <div id = "s11" class="ss"></div>
+        <div id = "s12" class="ss"></div>
+        <div id = "s11" class="ss"></div>
+        <div id = "s12" class="ss"></div>
+        <div id = "s11" class="ss"></div>
+        <div id = "s12" class="ss"></div>
+    </div>
+
+    <!--<div id = "style2">-->
+        <!--<div id = "s21" class="ss"></div>-->
+        <!--<div id = "s22" class="ss"></div>-->
+        <!--<div id = "s21" class="ss"></div>-->
+        <!--<div id = "s22" class="ss"></div>-->
+        <!--<div id = "s21" class="ss"></div>-->
+        <!--<div id = "s22" class="ss"></div>-->
+    <!--</div>-->
+
+    <div id = "bottom">
+        this is bottom.
+    </div>
+</div>
+Copyright @ 2014 resume bar
+<script>
+    var current_w = document.body.scrollWidth;
+    document.getElementById("main_bot").style.width = current_w + 'px';
+</script>
+</body>
 </html>
