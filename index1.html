@@ -1,126 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>NewToU</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js">
-    <![endif]-->
-  <style>
-        body{
-            padding: 0;
-            margin: 0;
-            height: 1800px;
-            text-align: center;
-        }
-        #main_bot{
-            margin:0 auto;
-            background-color: #d9d9d9;
-            /*width: 1324px;*/
-            height: 1400px;
-
-        }
-        #head {
-            margin:0 auto;
-            background-image: url("http://photo.poco.cn/lastphoto-htx-id-3981589-p-0.xhtml?spread_id=FXuU");
-            /*margin-left: auto;*/
-            /*margin-right: auto ;*/
-            height: 300px;
-            width: 1150px;
-            overflow: auto;
-            /*background-size:cover;*/
-        }
-        #style1 {
-            margin:0 auto;
-            background-color: #ffb84c;
-            margin-top: 30px;
-            /*margin-left: auto;*/
-            /*margin-right: auto ;*/
-            width: 1150px;
-            height: 400px;
-        }
-        #style2{
-            margin:0 auto;
-            background-color: #ffffff;
-            margin-top: 30px;
-            /*margin-left: auto;*/
-            /*margin-right: auto ;*/
-            width: 1150px;
-            height: 400px;
-        }
-        #bottom{
-            margin:0 auto;
-            background-color: darkgrey;
-            /*margin-left: auto;*/
-            /*margin-right: auto ;*/
-            margin-top: 30px;
-            height: 150px;
-            width: 1150px;
-
-        }
-        #d22{
-            margin-bottom: 50px;
-            background-color: darkgray;
-            width: 1150px;
-
-        }
-        .ss{
-            height: 200px;
-            width: 150px;
-            background-color: darkseagreen;
-            border: 2px #888b17 #882611;
-            box-shadow: 3px 3px 10px #4b81f5;
-            float: left;
-            margin-left: 15px;
-            margin-right: 15px;
-            margin-top:20px;
-
-        }
-        .ss:hover{
-            opacity: 0.8;
-        }
-    </style>
+<head>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <meta charset="UTF-8">
 </head>
 <body>
-<div id="main_bot">
 
-    <div id = "head">
-        <h1>resume bar</h1>
+<div data-role="page" id="index" data-position="fixed">
+    <div data-role="header">
+        <h1>欢迎访问我的主页</h1>
     </div>
 
-    <div id = "style1">
-        <div id = "s11" class="ss"></div>
-        <div id = "s12" class="ss"></div>
-        <div id = "s11" class="ss"></div>
-        <div id = "s12" class="ss"></div>
-        <div id = "s11" class="ss"></div>
-        <div id = "s12" class="ss"></div>
-        <div id = "s11" class="ss"></div>
-        <div id = "s12" class="ss"></div>
-        <div id = "s11" class="ss"></div>
-        <div id = "s12" class="ss"></div>
+    <div data-role="content">
+        <p>欢迎！</p>
+        <a class="ui-btn-b" href="#pageone" data-transition="pop" >列车时刻查询</a>
+        <input type="button" value="anniu" />
     </div>
-
-    <!--<div id = "style2">-->
-        <!--<div id = "s21" class="ss"></div>-->
-        <!--<div id = "s22" class="ss"></div>-->
-        <!--<div id = "s21" class="ss"></div>-->
-        <!--<div id = "s22" class="ss"></div>-->
-        <!--<div id = "s21" class="ss"></div>-->
-        <!--<div id = "s22" class="ss"></div>-->
-    <!--</div>-->
-
-    <div id = "bottom">
-        this is bottom.
+    <div role="main" class="ui-content">
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#">项目1</a></li>
+            <li><a href="#">项目2</a></li>
+            <li><a href="#">项目3</a></li>
+            <li><a href="#">项目4</a></li>
+            <li><a href="#">项目5</a></li>
+        </ul>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <h1>页脚文本</h1>
     </div>
 </div>
-Copyright @ 2014 resume bar
-<script>
-    var current_w = document.body.scrollWidth;
-    document.getElementById("main_bot").style.width = current_w + 'px';
-</script>
+
+<div data-role="page" id="pageone">
+    <div data-role="header">
+        <h1>详细内容：</h1>
+    </div>
+
+    <div data-role="content">
+        <p>你好</p>
+        <p><a href="#index" data-transition="slide">返回主页</a></p>
+    </div>
+
+    <div data-role="footer">
+        <h1>页脚文本2</h1>
+    </div>
+</div>
+
 </body>
 </html>
